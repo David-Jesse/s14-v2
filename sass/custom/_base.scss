@@ -1,0 +1,99 @@
+// Variables and their values for font-sizing
+$smallest-sizing: 11px;
+$small-sizing: 13px;
+$medium-sizing: 16px;
+$large-sizing: 18px;
+$larger-sizing: 24px;
+$semi-large-sizing:40px;
+$largest-sizing: 48px;
+
+// Colors
+$primary-color: #000000;
+$secondary-color: #FF2546;
+$tertiary-color: #FFFFFF;
+$ashy-color: #BDBDBD;
+$nav-color: #333333;
+$grey-color: #828282;
+$gray-background: #f7f7f7;
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $gray-background;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: $semi-large-sizing;
+}
+
+h4 {
+    font-size: $larger-sizing;
+}
+
+p {
+    font-size: $medium-sizing;
+    color: $primary-color;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+li {
+    @extend ul;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: $medium-sizing;
+}
+
+
+.expand p {
+    color: $secondary-color;
+}
+
+#business p {
+    color: $grey-color;
+}
+
+.features h4 {
+    margin-bottom: 0px;
+}
+
+.read-more {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.expand {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+    .images {
+        width: 100%;
+    }
+
+.right-arrow {
+    width: auto;
+}
+
+.black-arrow {
+    width: auto;
+}
+
+$content_width: 1240px;

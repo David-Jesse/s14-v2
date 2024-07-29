@@ -1,0 +1,266 @@
+.top-content {
+    display: flex;
+    width: 100%;
+    gap: 13px;
+    padding-bottom: 20px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-top-content {
+        width: 67%;
+    }
+
+    .feature-image {
+        @include mobile {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .image-5 {
+        width: 100%;
+    }
+
+    .left-top-content {
+        width: 92%;
+    }   
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .more {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #business {
+        color: $ashy-color;
+    }
+
+    .more {
+        display: flex;
+    }
+
+    .explore {
+        display: flex;
+        align-items: center;
+    }
+
+    .explore p{
+        color: $secondary-color;
+    }
+
+    .right-top-content{
+        width: 44%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .image-1 {
+        width: 100%;
+    }
+}
+
+.lower-content {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 34%;
+
+        @include mobile {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    .feature-image {
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    #business {
+        color: $ashy-color;
+    }
+}
+
+.cta-site-wrapper {
+    width: 100%;
+    background-color: $primary-color;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    .cta-container {
+        padding: 40px 0px 40px 0px;
+        width: 100%;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+    }
+
+    .email h5 {
+        color: $tertiary-color;
+        font-size: $large-sizing;
+    }
+
+    .email p {
+        color: $tertiary-color;
+        font-size: $medium-sizing;
+        width: 62%;
+    }
+
+    .email-box {
+        position: relative;
+    }
+
+    .email-box span {
+        position: absolute;
+        left: 32px;
+        top: -46px;
+    }
+
+    .email-box input {
+        height: 27px;
+        padding-left: 15px;
+        border: 1px solid $tertiary-color;
+        border-radius: 1px;
+        background-color: $primary-color;
+    }
+
+    button {
+        background-color: $secondary-color;
+        padding: 7px 27px;
+        border: 2px solid $secondary-color;
+        color: $tertiary-color;
+        font-size: 12px;
+    }
+
+    .address h5 {
+        color: $tertiary-color;
+        font-size: 18px;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .email-address h6 {
+        color: $tertiary-color;
+        text-decoration: underline;
+        margin-bottom: 0px;
+    }
+
+    .email-address a {
+        color: $secondary-color;
+    }
+
+    .office-address h6 {
+        color: $tertiary-color;
+        text-decoration: underline;
+        margin-bottom: 0px;
+    }
+
+    .office-address {
+        width: 50%;
+    }
+
+    .office-address a{
+        color: $tertiary-color;
+    }
+
+    // .socials {
+    //     width: 12%;
+    // }
+
+    .socials h5 {
+        color: $tertiary-color;
+        font-size: 18px;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .ig-fb {
+        display: flex;
+        gap: 15px;
+        width: 27%;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: $primary-color;
+    border-top: 2px solid $tertiary-color;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .footer-content h6 {
+        color: $grey-color;
+        font-size: $smallest-sizing;
+    }
+
+    .privacy {
+        display: flex;
+        gap: 10px;
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .privacy p {
+        font-size: $smallest-sizing;
+        text-decoration: underline;
+    }
+
+    .privacy a {
+        color: $grey-color;
+    }
+}

@@ -1,0 +1,273 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #000000;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.expand p {
+  color: #FF2546;
+}
+
+#business p {
+  color: #828282;
+}
+
+.features h4 {
+  margin-bottom: 0px;
+}
+
+.images {
+  height: 419px;
+  width: 350px;
+}
+
+.read-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expand {
+  display: flex;
+  align-items: center;
+}
+
+.site-wrapper {
+  width: 80%;
+  padding: 0 0;
+  margin: auto;
+}
+
+.nav-bar {
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.nav-bar .nav-links a {
+  color: #333333;
+}
+.nav-bar #blog a {
+  color: #BDBDBD;
+}
+
+.top-content {
+  display: flex;
+  width: 100%;
+  gap: 13px;
+  padding-bottom: 20px;
+}
+.top-content .left-top-content {
+  width: 67%;
+}
+.top-content .image-5 {
+  width: 100%;
+}
+.top-content .left-top-content {
+  width: 92%;
+}
+.top-content .features {
+  display: flex;
+  flex-direction: column;
+}
+.top-content .more {
+  display: flex;
+  justify-content: space-between;
+}
+.top-content #business {
+  color: #BDBDBD;
+}
+.top-content .more {
+  display: flex;
+}
+.top-content .explore {
+  display: flex;
+  align-items: center;
+}
+.top-content .explore p {
+  color: #FF2546;
+}
+.top-content .right-top-content {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+}
+.top-content .image-1 {
+  width: 100%;
+}
+
+.lower-content {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.lower-content .content {
+  width: 34%;
+}
+.lower-content #business {
+  color: #BDBDBD;
+}
+
+.cta-site-wrapper {
+  width: 100%;
+  background-color: #000000;
+}
+.cta-site-wrapper .cta-container {
+  padding: 40px 0px 40px 0px;
+}
+.cta-site-wrapper .contact {
+  display: flex;
+  justify-content: center;
+}
+.cta-site-wrapper .email h5 {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.cta-site-wrapper .email p {
+  color: #FFFFFF;
+  font-size: 16px;
+  width: 62%;
+}
+.cta-site-wrapper .email-box {
+  position: relative;
+}
+.cta-site-wrapper .email-box span {
+  position: absolute;
+  left: 32px;
+  top: -46px;
+}
+.cta-site-wrapper .email-box input {
+  height: 27px;
+  padding-left: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 1px;
+  background-color: #000000;
+}
+.cta-site-wrapper button {
+  background-color: #FF2546;
+  padding: 7px 27px;
+  border: 2px solid #FF2546;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.cta-site-wrapper .address h5 {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.cta-site-wrapper .email-address h6 {
+  color: #FFFFFF;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+.cta-site-wrapper .email-address a {
+  color: #FF2546;
+}
+.cta-site-wrapper .office-address h6 {
+  color: #FFFFFF;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+.cta-site-wrapper .office-address {
+  width: 50%;
+}
+.cta-site-wrapper .office-address a {
+  color: #FFFFFF;
+}
+.cta-site-wrapper .socials {
+  width: 12%;
+}
+.cta-site-wrapper .socials h5 {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.cta-site-wrapper .ig-fb {
+  display: flex;
+  gap: 15px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000000;
+  border-top: 2px solid #FFFFFF;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-content h6 {
+  color: #828282;
+  font-size: 11px;
+}
+.footer .privacy {
+  display: flex;
+  gap: 10px;
+}
+.footer .privacy p {
+  font-size: 11px;
+  text-decoration: underline;
+}
+.footer .privacy a {
+  color: #828282;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+.hero-section .hero-left h2 {
+  width: 64%;
+}
+.hero-section .hero-right {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+}
+.hero-section .filter-option {
+  display: flex;
+  gap: 10px;
+  height: 32px;
+  width: 128px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=/style.500aa19d.css.map */

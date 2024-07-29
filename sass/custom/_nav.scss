@@ -1,0 +1,74 @@
+.nav-bar {
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+        display: flex;
+        gap: 15px;
+
+        @include mobile {
+            flex-direction: column;
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            gap: 5px;
+            width: 100%;
+            align-items: center;
+            transition: 0.3s;
+        }
+    }
+
+    .nav-link {
+        transition: 0.7s ease;
+    }
+
+    .nav-link:hover {
+        color: $secondary-color;
+    }
+
+    .nav-links a {
+        color: $nav-color;
+    }
+
+    #blog a {
+        color: $ashy-color;
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: $primary-color;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+}
+
