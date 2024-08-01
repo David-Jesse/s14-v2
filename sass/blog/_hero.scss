@@ -1,0 +1,20 @@
+.blog-hero-section {
+    display: flex;
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: $largest-sizing;
+        padding: 200px 20px 0px 0px;
+        color: $tertiary-color;
+        width: 64%;
+        line-height: 50px;
+        font-weight: 300;
+        max-width: 650px;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
