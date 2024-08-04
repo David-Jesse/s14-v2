@@ -23,15 +23,15 @@
             align-items: center;
             transition: 0.3s;
         }
-    }
 
-    .nav-link {
-        transition: 0.7s ease;
-    }
+        a {
+            font-size: $medium-sizing;
+            color: $tertiary-color;
+        }
 
-    .nav-links a{
-        font-size: $medium-sizing;
-        color: $tertiary-color;
+        .nav-link {
+            transition: 0.7s ease;
+        }
     }
 
     .hamburger {
@@ -41,15 +41,15 @@
         @include mobile {
             display: block;
         }
-    }
 
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background-color: $tertiary-color;
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: $tertiary-color;
+        }
     }
 
     .hamburger.active .bar:nth-child(2){

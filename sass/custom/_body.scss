@@ -132,99 +132,109 @@
             gap: 10px;
 
         }
-    }
 
-    .email h5 {
-        color: $tertiary-color;
-        font-size: $large-sizing;
-    }
+        .email {
+            h5{
+                color: $tertiary-color;
+                font-size: $large-sizing;
+            }
+    
+            p {
+                color: $tertiary-color;
+                font-size: $medium-sizing;
+                width: 62%;
+    
+                @include mobile {
+                    width: 100%;
+                }
+            }
+    
+            .email-box {
+                position: relative;
+    
+                span {
+                    position: absolute;
+                    left: 32px;
+                    top: -32px;
+                }
 
-    .email p {
-        color: $tertiary-color;
-        font-size: $medium-sizing;
-        width: 62%;
-
-        @include mobile {
-            width: 100%;
+                .vector {
+                    width: 11px;
+                }
+    
+                input {
+                    height: 27px;
+                    padding-left: 15px;
+                    border: 1px solid $tertiary-color;
+                    background-color: $primary-color;
+                }
+    
+                button {
+                    background-color: $secondary-color;
+                    padding: 7px 27px;
+                    border: 2px solid $secondary-color;
+                    color: $tertiary-color;
+                    font-size: 12px;
+                }
+            }
+           
         }
-    }
 
-    .email-box {
-        position: relative;
-    }
 
-    .email-box span {
-        position: absolute;
-        left: 32px;
-        top: -46px;
-    }
+        .address {
+            h5 {
+                color: $tertiary-color;
+                font-size: 18px;
 
-    .email-box input {
-        height: 27px;
-        padding-left: 15px;
-        border: 1px solid $tertiary-color;
-        border-radius: 1px;
-        background-color: $primary-color;
-    }
-
-    button {
-        background-color: $secondary-color;
-        padding: 7px 27px;
-        border: 2px solid $secondary-color;
-        color: $tertiary-color;
-        font-size: 12px;
-    }
-
-    .address h5 {
-        color: $tertiary-color;
-        font-size: 18px;
-
-        @include mobile {
-            width: 100%;
+                @include mobile {
+                    width: 100%;
+                }
+            }
+    
+            h6 {
+                color: $tertiary-color;
+                text-decoration: underline;
+                margin-bottom: 0px;
+            }
+    
+            a {
+                color: $secondary-color;
+            }
+    
+            .office-address {
+                width: 50%;
+    
+                h6{
+                    color: $tertiary-color;
+                    text-decoration: underline;
+                    margin-bottom: 0px;
+                }
+    
+                a {
+                    color: $tertiary-color;
+                }
+            }
         }
-    }
+    
+        .socials {
 
-    .email-address h6 {
-        color: $tertiary-color;
-        text-decoration: underline;
-        margin-bottom: 0px;
-    }
+           h5 {
+                color: $tertiary-color;
+                font-size: 18px;
 
-    .email-address a {
-        color: $secondary-color;
-    }
-
-    .office-address h6 {
-        color: $tertiary-color;
-        text-decoration: underline;
-        margin-bottom: 0px;
-    }
-
-    .office-address {
-        width: 50%;
-    }
-
-    .office-address a{
-        color: $tertiary-color;
-    }
-
-    // .socials {
-    //     width: 12%;
-    // }
-
-    .socials h5 {
-        color: $tertiary-color;
-        font-size: 18px;
-
-        @include mobile {
-            width: 100%;
+                @include mobile {
+                    width: 100%;
+                }
+            }
+            
+            .ig-fb {
+                display: flex;
+                gap: 15px;
+                width: 27%;
+            }
         }
-    }
 
-    .ig-fb {
-        display: flex;
-        gap: 15px;
-        width: 27%;
+
     }
 }
 
@@ -242,29 +252,29 @@
             display: flex;
             flex-direction: column;
         }
-    }
 
-    .footer-content h6 {
-        color: $grey-color;
-        font-size: $smallest-sizing;
-    }
-
-    .privacy {
-        display: flex;
-        gap: 10px;
-
-        @include mobile {
-            display: flex;
-            justify-content: center;
+        h6 {
+            color: $grey-color;
+            font-size: $smallest-sizing;
         }
-    }
 
-    .privacy p {
-        font-size: $smallest-sizing;
-        text-decoration: underline;
-    }
+        .privacy {
+            display: flex;
+            gap: 10px;
 
-    .privacy a {
-        color: $grey-color;
+            @include mobile {
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                font-size: $smallest-sizing;
+                text-decoration: underline;
+            }
+
+            a {
+                color: $grey-color;
+            }
+        }
     }
 }

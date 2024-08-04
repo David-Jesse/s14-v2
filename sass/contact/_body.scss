@@ -1,0 +1,67 @@
+.contact-hero {
+    padding-top: 30px;
+    display: flex;
+
+     h2 {
+        margin-bottom: 0px;
+    }
+
+    p {
+        width: 42%;
+    }
+
+    .right-content {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 100px;
+        }
+
+        .vector-four {
+            width: 25px;
+        }
+    }
+}
+
+.fill-form {
+    width: 100%;
+    padding-top: 40px;
+
+    .form-container {
+        display: flex;
+        width: 66%;
+        align-items: center;
+
+        .form-cta {
+            background-color: #ffcf25;
+            padding: 40px 44px;
+
+            h1 {
+                font-size: 64px;
+                padding-left: 20px;
+                width: 45%;
+            }
+        }
+
+        .contact-form {
+            position: relative;
+
+            .input-data {
+                width: 100%;
+                height: 40px;
+                margin: 0 20px;
+                position: relative;
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    font-size: $medium-sizing;
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+    }
+}

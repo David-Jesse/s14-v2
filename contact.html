@@ -4,38 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | s14-v2</title>
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
     <div class="site-wrapper">
-        <nav class="nav-bar">
+        <nav class="nav-bar-contact">
             <div class="logo">
                 <a href="/"><img src="./assets/images/Logo.png" alt=""></a>
             </div>
 
             <ul class="nav-links"> 
-                <li><a href="/">About us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="/">Our Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/" class="nav-link">About us</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="/" class="nav-link">Our Work</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </div>
 
     <main>
         <div class="site-wrapper">
             <div class="contact-hero">
-                <h2>Wnat to know more?</h2>
-                <p>Want to find out more about Studio 14 and how we can help, then get in get-in-touch
-                    using the contact from or the details below and we will get back to you as soon as possible.
-                </p>
+                <div class="left-content">
+                    <h2>Want to know more?</h2>
+                    <p>Want to find out more about Studio 14 and how we can help, then get in touch
+                        using the contact from or the details below and we will get back to you as soon as possible.
+                    </p>        
+                </div>
+                <div class="right-content">
+                    <span><img src="./assets/images/Vector (4).png" alt="" class="vector-four"></span>
+                </div>
             </div>
         </div>
         
 
-        <div class="">
+        <div class="fill-form">
+            <div class="form-container">
+                <div class="form-cta">
+                    <h1>Lets make something happen.</h1>
+                </div>
 
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline"></div>
+                                <label for="">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline"></div>
+                                <label for="">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline"></div>
+                                <label for="">Phone No.</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline"></div>
+                                <label for="">Message</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="address-location-container">
+            <div class="address">
+                <h4>Office Address</h4>
+                <p>Studio 14, unit 2028, The Big Peg 120 Vyse Street, Hackley, Bermingham B18 6ND, United Kingdom</p>
+                <span>Email: daniel@studio14.co.uk</span>
+                <span>+44 (0) 121 439 3031</span>
+            </div>
+            <div class="map-location">
+                <img src="./assets/images/Map.png" alt="">
+            </div>
         </div>
     </main>
+
+    <div class="contact-cta-container">
+        <div class="site-wrapper">
+            <div class="cta-container">
+                <div class="contact">
+                    <div class="email">
+                        <span><img src="./assets/images/Vector (5).png" alt=""></span>
+                        <h5>Keep in the loop. We won't spam you.</h5>
+                        <p>Sign up to our mailing list to find out more information and keep up to date about our activities.</p>
+                        <div class="email-box">
+                            <input type="text" name="email" placeholder="email"> 
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+
+                    <div class="address">
+                        <h5>Contact Us</h5>
+                        <div class="email-address">
+                            <h6>email</h6>
+                            <span><a href="mailto:hello@studio14.co.uk">hello@studio14.co.uk</a></span>
+                        </div>
+                        <div class="office-address">
+                            <h6>address</h6>
+                            <span><a href="/">4d Olatobusun Street, Shonibare Estate, Ikeja, Lagos Nigeria</a></span>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <h5>Find Out More</h5>
+                        <div class="ig-fb">
+                            <img src="./assets/icons/fb-icon.png" alt="">
+                            <img src="./assets/icons/ig-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="site-wrapper">
+            <div class="footer-content">
+                <h6>&copy; 2019 studio l4 ltd - All rights reserved.</h6>
+                <div class="privacy">
+                    <p><a href="/">Privacy Policy</a></p>
+                    <p><a href="/">Terms and Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

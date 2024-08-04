@@ -1,4 +1,4 @@
-.nav-bar {
+.nav-bar-contact {
     padding: 20px 0px 20px 0px;
     width: 100%;
     display: flex;
@@ -10,29 +10,26 @@
         gap: 15px;
 
         @include mobile {
-            flex-direction: column;
+            flex-direction: colunm;
             position: fixed;
             top: 70px;
             left: -100%;
-            gap: 5px;
+            gap: 10px;
             width: 100%;
             align-items: center;
             transition: 0.3s;
         }
 
+        
+        .nav-link {
+            transition: 0.7s ease;
+        }
+
         a {
             color: $nav-color;
         }
-
-        .nav-link:hover {
-            color: $secondary-color;
-        }
-        
-        #blog a {
-            color: $ashy-color;
-        }
     }
-   
+
     .hamburger {
         display: none;
         cursor: pointer;
@@ -49,21 +46,21 @@
             transition: all 0.3s ease-in-out;
             background-color: $primary-color;
         }
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg)
-    }
-
-    .nav-links.active {
-        left: 0;
-    }
+    
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3){
+            transform: translate(-8px) rotate(-45deg);
+        }
+    
+        .nav-links.active {
+            left: 0;
+        }
+    }   
 }

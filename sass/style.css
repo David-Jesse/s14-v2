@@ -97,16 +97,13 @@ li {
     transition: 0.3s;
   }
 }
-.nav-bar .nav-link {
-  transition: 0.7s ease;
-}
-.nav-bar .nav-link:hover {
-  color: #FF2546;
-}
 .nav-bar .nav-links a {
   color: #333333;
 }
-.nav-bar #blog a {
+.nav-bar .nav-links .nav-link:hover {
+  color: #FF2546;
+}
+.nav-bar .nav-links #blog a {
   color: #BDBDBD;
 }
 .nav-bar .hamburger {
@@ -118,7 +115,7 @@ li {
     display: block;
   }
 }
-.nav-bar .bar {
+.nav-bar .hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -263,80 +260,82 @@ li {
     gap: 10px;
   }
 }
-.cta-site-wrapper .email h5 {
+.cta-site-wrapper .contact .email h5 {
   color: #FFFFFF;
   font-size: 18px;
 }
-.cta-site-wrapper .email p {
+.cta-site-wrapper .contact .email p {
   color: #FFFFFF;
   font-size: 16px;
   width: 62%;
 }
 @media (max-width: 1239px) {
-  .cta-site-wrapper .email p {
+  .cta-site-wrapper .contact .email p {
     width: 100%;
   }
 }
-.cta-site-wrapper .email-box {
+.cta-site-wrapper .contact .email .email-box {
   position: relative;
 }
-.cta-site-wrapper .email-box span {
+.cta-site-wrapper .contact .email .email-box span {
   position: absolute;
   left: 32px;
-  top: -46px;
+  top: -32px;
 }
-.cta-site-wrapper .email-box input {
+.cta-site-wrapper .contact .email .email-box .vector {
+  width: 11px;
+}
+.cta-site-wrapper .contact .email .email-box input {
   height: 27px;
   padding-left: 15px;
   border: 1px solid #FFFFFF;
-  border-radius: 1px;
   background-color: #000000;
 }
-.cta-site-wrapper button {
+.cta-site-wrapper .contact .email .email-box button {
   background-color: #FF2546;
   padding: 7px 27px;
   border: 2px solid #FF2546;
   color: #FFFFFF;
   font-size: 12px;
 }
-.cta-site-wrapper .address h5 {
+.cta-site-wrapper .contact .address h5 {
   color: #FFFFFF;
   font-size: 18px;
 }
 @media (max-width: 1239px) {
-  .cta-site-wrapper .address h5 {
+  .cta-site-wrapper .contact .address h5 {
     width: 100%;
   }
 }
-.cta-site-wrapper .email-address h6 {
+.cta-site-wrapper .contact .address h6 {
   color: #FFFFFF;
   text-decoration: underline;
   margin-bottom: 0px;
 }
-.cta-site-wrapper .email-address a {
+.cta-site-wrapper .contact .address a {
   color: #FF2546;
 }
-.cta-site-wrapper .office-address h6 {
+.cta-site-wrapper .contact .address .office-address {
+  width: 50%;
+}
+.cta-site-wrapper .contact .address .office-address h6 {
   color: #FFFFFF;
   text-decoration: underline;
   margin-bottom: 0px;
 }
-.cta-site-wrapper .office-address {
-  width: 50%;
-}
-.cta-site-wrapper .office-address a {
+.cta-site-wrapper .contact .address .office-address a {
   color: #FFFFFF;
 }
-.cta-site-wrapper .socials h5 {
+.cta-site-wrapper .contact .socials h5 {
   color: #FFFFFF;
   font-size: 18px;
 }
 @media (max-width: 1239px) {
-  .cta-site-wrapper .socials h5 {
+  .cta-site-wrapper .contact .socials h5 {
     width: 100%;
   }
 }
-.cta-site-wrapper .ig-fb {
+.cta-site-wrapper .contact .socials .ig-fb {
   display: flex;
   gap: 15px;
   width: 27%;
@@ -362,21 +361,21 @@ li {
   color: #828282;
   font-size: 11px;
 }
-.footer .privacy {
+.footer .footer-content .privacy {
   display: flex;
   gap: 10px;
 }
 @media (max-width: 1239px) {
-  .footer .privacy {
+  .footer .footer-content .privacy {
     display: flex;
     justify-content: center;
   }
 }
-.footer .privacy p {
+.footer .footer-content .privacy p {
   font-size: 11px;
   text-decoration: underline;
 }
-.footer .privacy a {
+.footer .footer-content .privacy a {
   color: #828282;
 }
 
@@ -456,12 +455,12 @@ li {
     transition: 0.3s;
   }
 }
-.background-image .nav-link {
-  transition: 0.7s ease;
-}
 .background-image .nav-links a {
   font-size: 16px;
   color: #FFFFFF;
+}
+.background-image .nav-links .nav-link {
+  transition: 0.7s ease;
 }
 .background-image .hamburger {
   display: none;
@@ -472,7 +471,7 @@ li {
     display: block;
   }
 }
-.background-image .bar {
+.background-image .hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -723,4 +722,120 @@ footer .privacy p {
 }
 footer .privacy a {
   color: #828282;
+}
+
+.nav-bar-contact {
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-contact .nav-links {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 1239px) {
+  .nav-bar-contact .nav-links {
+    flex-direction: colunm;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    transition: 0.3s;
+  }
+}
+.nav-bar-contact .nav-links .nav-link {
+  transition: 0.7s ease;
+}
+.nav-bar-contact .nav-links a {
+  color: #333333;
+}
+.nav-bar-contact .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1239px) {
+  .nav-bar-contact .hamburger {
+    display: block;
+  }
+}
+.nav-bar-contact .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+.nav-bar-contact .hamburger .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-bar-contact .hamburger .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-bar-contact .hamburger .hamburger.active .bar:nth-child(3) {
+  transform: translate(-8px) rotate(-45deg);
+}
+.nav-bar-contact .hamburger .nav-links.active {
+  left: 0;
+}
+
+.contact-hero {
+  padding-top: 30px;
+  display: flex;
+}
+.contact-hero h2 {
+  margin-bottom: 0px;
+}
+.contact-hero p {
+  width: 42%;
+}
+.contact-hero .right-content {
+  position: relative;
+}
+.contact-hero .right-content span {
+  position: absolute;
+  top: 100px;
+}
+.contact-hero .right-content .vector-four {
+  width: 25px;
+}
+
+.fill-form {
+  width: 100%;
+  padding-top: 40px;
+}
+.fill-form .form-container {
+  display: flex;
+  width: 66%;
+  align-items: center;
+}
+.fill-form .form-container .form-cta {
+  background-color: #ffcf25;
+  padding: 40px 44px;
+}
+.fill-form .form-container .form-cta h1 {
+  font-size: 64px;
+  padding-left: 20px;
+  width: 45%;
+}
+.fill-form .form-container .contact-form {
+  position: relative;
+}
+.fill-form .form-container .contact-form .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+.fill-form .form-container .contact-form .input-data input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  border-bottom: 2px solid #000000;
 }/*# sourceMappingURL=style.css.map */
