@@ -10,7 +10,7 @@
         gap: 15px;
 
         @include mobile {
-            flex-direction: colunm;
+            flex-direction: column;
             position: fixed;
             top: 70px;
             left: -100%;
@@ -46,21 +46,21 @@
             transition: all 0.3s ease-in-out;
             background-color: $primary-color;
         }
-    
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-    
-        .hamburger.active .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-        }
-    
-        .hamburger.active .bar:nth-child(3){
-            transform: translate(-8px) rotate(-45deg);
-        }
-    
-        .nav-links.active {
-            left: 0;
-        }
     }   
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
 }
