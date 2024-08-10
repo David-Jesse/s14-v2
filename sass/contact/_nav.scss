@@ -5,6 +5,15 @@
     justify-content: space-between;
     align-items: center;
 
+    .side-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width:  250px;
+        z-index: 999;
+    }
+
     .nav-links {
         display: flex;
         gap: 15px;

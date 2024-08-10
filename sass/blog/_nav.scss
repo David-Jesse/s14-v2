@@ -1,12 +1,17 @@
 .background-image {
     background-image: url('../assets/images/background-image.png');
     padding-bottom: 280px;
+    // background-repeat: no-repeat;
 
     .blog-nav {
         display: flex;
         padding-top: 20px;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile {
+            padding-top: 10px;
+        }
     }
 
     .nav-links {

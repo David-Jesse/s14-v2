@@ -439,6 +439,11 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1239px) {
+  .background-image .blog-nav {
+    padding-top: 10px;
+  }
+}
 .background-image .nav-links {
   display: flex;
   gap: 18px;
@@ -540,6 +545,7 @@ li {
 }
 .text-wrapper .text {
   max-width: 800px;
+  font-size: 18px;
 }
 @media (max-width: 1239px) {
   .text-wrapper .text p {
@@ -731,6 +737,14 @@ footer .privacy a {
   justify-content: space-between;
   align-items: center;
 }
+.nav-bar-contact .side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+}
 .nav-bar-contact .nav-links {
   display: flex;
   gap: 15px;
@@ -822,9 +836,7 @@ footer .privacy a {
 }
 @media (max-width: 1239px) {
   .fill-form .form-container {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }
 .fill-form .form-container .form-cta {
@@ -835,6 +847,7 @@ footer .privacy a {
 @media (max-width: 1239px) {
   .fill-form .form-container .form-cta {
     width: 100%;
+    padding: 0px;
   }
 }
 .fill-form .form-container .form-cta h1 {
@@ -849,8 +862,9 @@ footer .privacy a {
 }
 @media (max-width: 1239px) {
   .fill-form .form-container .contact-form {
-    right: -188px;
-    bottom: 90px;
+    width: 74%;
+    position: relative;
+    display: flex;
   }
 }
 .fill-form .form-container .contact-form .input-box {
@@ -893,7 +907,6 @@ footer .privacy a {
 }
 @media (max-width: 1239px) {
   .address-location-container {
-    display: flex;
     flex-direction: column;
   }
 }
@@ -901,7 +914,6 @@ footer .privacy a {
   background-color: #FF2546;
   width: 32%;
   padding: 64px 0px;
-  height: 0%;
 }
 @media (max-width: 1239px) {
   .address-location-container .address {
@@ -923,6 +935,14 @@ footer .privacy a {
 }
 .address-location-container .address .address-details span {
   color: #FFFFFF;
+}
+.address-location-container .map-location {
+  width: 100%;
+  height: 400px;
+}
+.address-location-container .map-location iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contact-cta-container {
