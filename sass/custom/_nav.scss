@@ -12,12 +12,14 @@
         @include mobile {
             flex-direction: column;
             position: fixed;
-            top: 70px;
+            top: -20px;
             left: -100%;
             gap: 5px;
             width: 100%;
             align-items: center;
             transition: 0.3s;
+            background-color: $secondary-color;
+            padding: 10px 0px;
         }
 
         a {
@@ -26,6 +28,10 @@
 
         .nav-link:hover {
             color: $secondary-color;
+
+            @include mobile {
+                color: $primary-color;
+            }
         }
         
         #blog a {

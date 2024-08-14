@@ -1,41 +1,37 @@
-.nav-bar-contact {
-    padding: 20px 0px 20px 0px;
-    width: 100%;
+.navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 20px;
 
-    .side-bar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width:  250px;
-        z-index: 999;
-    }
-
-    .nav-links {
+    .nav-menu{
         display: flex;
-        gap: 15px;
+        margin-left: auto;
+        gap: 14px;
+        align-items: center;
 
         @include mobile {
-            flex-direction: column;
             position: fixed;
-            top: 70px;
             left: -100%;
-            gap: 10px;
-            width: 100%;
-            align-items: center;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            background-color: $secondary-color;
             transition: 0.3s;
         }
 
-        
-        .nav-link {
-            transition: 0.7s ease;
-        }
+        li {
+            text-decoration: none;
 
-        a {
-            color: $nav-color;
+            a {
+                color: $primary-color;
+            }
+
+            .nav-link {
+                transition: 0.7s ease;
+            }
+
+            .nav-link:hover {
+                color: $secondary-color;
+            }
         }
     }
 
@@ -53,23 +49,21 @@
             height: 3px;
             margin: 5px auto;
             transition: all 0.3s ease-in-out;
-            background-color: $primary-color;
+            color: $primary-color;
         }
-    }   
-    
-    .hamburger.active .bar:nth-child(2) {
+    }
+
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
-
-    .hamburger.active .bar:nth-child(1) {
+    .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-links.active {
+    .nav-menu.active {
         left: 0;
     }
 }
